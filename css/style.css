@@ -1,18 +1,30 @@
 body {
     font-family: Helvetica, sans-serif, Arial;
+    background-color:rgb(67, 104, 80);
 }
 
 #navigation-bar {
     display: flex;
     justify-content: space-between;
+    color: #FBFADA;
 }
 
 #logo {
     display: flex;
-    height: min-content;
     margin: 0;
     align-items: center;
-    height: 100%;
+    text-decoration: none;
+}
+
+#logo:hover {
+    color: #edebac;
+    text-shadow: 0px 0px 20px black;
+}
+
+#logo>span>a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #FBFADA;
 }
 
 #navigation {
@@ -22,18 +34,24 @@ body {
 #navigation>a {
     text-decoration: none;
     padding: 8px;
+    color: #FBFADA;
 }
 
-#navigation:hover{
-    color: red;
+#navigation:hover {
+    color: #edebac;
+    text-shadow: 0px 0px 20px black;
 }
 
 .container {
+    margin: auto;
+    width: 75%;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: blanchedalmond;
+    color:papayawhip;
+    background-color:  rgb(18, 55, 42);
     margin-top: 30px;
     padding-bottom: 30px;
     border-radius: 10px;
@@ -42,12 +60,13 @@ body {
 .input-section {
     transition-duration: 0.4s;
     width: 50%;
-    background-color: rgb(187, 227, 228);
+    color: black;
+    background-color: #ADBC9F;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     padding-top: 6px;
-    padding-bottom: 15px;    
+    padding-bottom: 15px;
 }
 
 .input-field { 
@@ -59,15 +78,19 @@ body {
     margin: 5px 10px 10px 10px;
 }
 
+.input-field:disabled {
+    background-color: white;
+}
+
 .input-field:focus {
     border: solid blue;
 }
 
 .my-button {
-    width: 25%;
-    transition-duration: 0.4s;
-    background-color: rgb(176, 113, 236);
-    color: white;
+    width: 80px;
+    transition-duration: 0.2s;
+    background-color: #FBFADA;
+    color: black;
     border-radius: 8px;
     border: none;
     padding: 10px;
@@ -76,21 +99,23 @@ body {
 }
 
 .my-button:hover {
-    background-color: rgb(142, 54, 225);
-
+    background-color: #ece9b4;
 }
 
 .my-button:active {
-    background-color: rgb(97, 9, 179);
+    background-color: #ede88b;
     transform: translateY(2px);
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 #rumus {
+    margin: auto;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background-color: blanchedalmond;
     border-radius: 10px;
+    padding-bottom: 20px;
 }

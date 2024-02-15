@@ -8,13 +8,16 @@
     
 </head>
 
-<body>
+<body>  
     <header id="navigation-bar">
         <h3 id="logo">
-            <img src="https://i1.sndcdn.com/avatars-piBR24uE0kxJyAoK-pHue3A-t500x500.jpg" alt="Kyohowt" width="30px" height="30px">
-            <span>Kyohowt</span>
-        </h3>
-        
+            <a href="https://soundcloud.com/kyohowt">
+                <img src="https://i1.sndcdn.com/avatars-piBR24uE0kxJyAoK-pHue3A-t500x500.jpg" alt="Kyohowt" width="30px" height="30px">
+            </a>
+            <span>
+                <a href="https://soundcloud.com/kyohowt">Kyohowt</a>
+            </span>
+        </h3>       
         <nav id="navigation">
             <a href="#rumus">Lihat Rumus</a>          
         </nav>
@@ -34,7 +37,7 @@
             <input class="input-field" id="inputSuhu" type="number" name="inputSuhu" placeholder="0">
 
             <label class="label" id="labelOutputSuhu">Fahrenheit :</label>
-            <input class="input-field" id="outputSuhu" type="number" name="outputSuhu" placeholder="0">
+            <input class="input-field" id="outputSuhu" type="number" name="outputSuhu" placeholder="0" disabled>
             <span>
                 <button class="my-button" id="convertButton">Konversi</button>
                 <button class="my-button" id="resetButton">Reset</button>
@@ -48,10 +51,21 @@
     <div id="rumus">
         <h2>Rumus Konversi</h2>
         <h3>Celsius ke Fahrenheit</h3>
-        <p>F = C(9/5) + 32</p>
+        <p>
+            <math>
+                <mo>F = C * (9/5) + 32</mo>                
+            </math>       
+        </p>
+        
         <h3>Fahrenheit ke Celsius</h3>
-        <p>C = (F-32) (5/9)</p>
+        <p>
+            <math>
+                <mo>C = (F - 32) * (5/9)</mo>                
+            </math>   
+        </p> 
     </div>
+
+    <br><br><br><br>
 
     <script src="js/script.js"></script>
 </body>
