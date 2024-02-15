@@ -34,7 +34,7 @@
         <div class="input-section">
             <h3 id="keterangan">Celsius Ke Fahrenheit</h3>
             <label class="label" id="labelInputSuhu">Celsius (°C) :</label>
-            <input class="input-field" id="inputSuhu" type="number" name="inputSuhu" placeholder="0">
+            <input class="input-field" id="inputSuhu" type="number" name="inputSuhu" placeholder="0" onkeypress="return numberOnly(event)">
 
             <label class="label" id="labelOutputSuhu">Fahrenheit (°F) :</label>
             <input class="input-field" id="outputSuhu" type="number" name="outputSuhu" placeholder="0" disabled>
