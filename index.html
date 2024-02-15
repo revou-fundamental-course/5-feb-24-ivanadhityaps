@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <header id="navigation-bar">
+        <h3 id="logo">
+            <img src="https://i1.sndcdn.com/avatars-piBR24uE0kxJyAoK-pHue3A-t500x500.jpg" alt="Kyohowt" width="30px" height="30px">
+            <span>Kyohowt</span>
+        </h3>
+        
+        <nav id="navigation">
+            <a href="#rumus">Lihat Rumus</a>          
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="deskripsi">
+            <h1>Konverter Suhu</h1> 
+            <p>Masukan derajat suhu yang akan dikonversikan, lalu klik tombol <b>Konversi</b>.</p>
+            <p>Tekan <b>Reset</b> untuk menghapus hasil konversi.</p>
+            <p>Tekan <b>Tukar</b> untuk mengganti Unit suhu konversi. </p>
+        </div>
+
+        <div class="input-section">
+            <label for="celsius" class="label">Celsius :</label>
+            <input class="input-field" id="celsius" type="number" name="celsius" placeholder="0">
+
+            <label for="fahrenheit" class="label">Fahrenheit :</label>
+            <input class="input-field" id="fahrenheit" type="number" name="fahrenheit" placeholder="0">
+            <span>
+                <button class="my-button" id="convertButton">Konversi</button>
+                <button class="my-button" id="resetButton">Reset</button>
+                <button class="my-button" id="tukarButton" name="tukarButton">Tukar</button>
+            </span>        
+        </div>      
+    </div>
+
+    <br><br><br><br>
+    
+    <div id="rumus">
+        <h2>Rumus Konversi</h2>
+        <h3>Celsius ke Fahrenheit</h3>
+        <p>F = C(9/5) + 32</p>
+        <h3>Fahrenheit ke Celsius</h3>
+        <p>C = (F-32) (5/9)</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
