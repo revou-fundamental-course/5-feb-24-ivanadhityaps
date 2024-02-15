@@ -75,7 +75,7 @@ body {
     border-radius: 4px;
     border: solid black;
     padding: 8px 8px;
-    margin: 5px 10px 10px 10px;
+    margin: 10px 10px 30px 10px;
 }
 
 .input-field:disabled {
@@ -118,4 +118,10 @@ body {
     background-color: blanchedalmond;
     border-radius: 10px;
     padding-bottom: 20px;
+}
+
+#rumus>p>math {
+    font-size: 150%;
+    border: solid black;
+    padding: 10px;
 }

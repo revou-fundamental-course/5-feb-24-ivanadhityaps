@@ -23,14 +23,14 @@ function tukarTemp () {
 
     if (modulo == 0) {
         tempSelect = "Celsius Ke Fahrenheit";
-        document.getElementById('labelInputSuhu').innerHTML = "Celsius";
-        document.getElementById('labelOutputSuhu').innerHTML = "Fahrenheit";
+        document.getElementById('labelInputSuhu').innerHTML = "Celsius (°C)";
+        document.getElementById('labelOutputSuhu').innerHTML = "Fahrenheit (°F)";
         document.getElementById('keterangan').innerHTML = tempSelect;
         console.log("celsiusToFahrenheit")
     } else {
         tempSelect = "Fahrenheit Ke Celsius";
-        document.getElementById('labelInputSuhu').innerHTML = "Fahrenheit";
-        document.getElementById('labelOutputSuhu').innerHTML = "Celsius";
+        document.getElementById('labelInputSuhu').innerHTML = "Fahrenheit (°F)";
+        document.getElementById('labelOutputSuhu').innerHTML = "Celsius (°C)";
         document.getElementById('keterangan').innerHTML = tempSelect;
         console.log("fahrenheitToCelsius")
     }
